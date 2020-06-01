@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/fireStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fire store"
+        />
+
+    <Button
+        android:id="@+id/authentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Authentication"
+        />
+
+    <Button
+        android:id="@+id/cloudStorage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cloud Storages"
+        />
+
+    <Button
+        android:id="@+id/realtimeDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Real-time Database"
+        />
+    <Button
+        android:id="@+id/cloudMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cloud Message"
+        />
+</LinearLayout>

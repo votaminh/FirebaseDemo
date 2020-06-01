@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "848753890459",
+    "firebase_url": "https://forcomdemo-25d7f.firebaseio.com",
+    "project_id": "forcomdemo-25d7f",
+    "storage_bucket": "forcomdemo-25d7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848753890459:android:4ddd15061fde7df1fc223e",
+        "android_client_info": {
+          "package_name": "com.forcom.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "848753890459-15sbamqj36rj684dosd9gkh83ahqhs9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA-YtaspzM-dJHEcc8PfKyqNdIvJlccF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "848753890459-15sbamqj36rj684dosd9gkh83ahqhs9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
