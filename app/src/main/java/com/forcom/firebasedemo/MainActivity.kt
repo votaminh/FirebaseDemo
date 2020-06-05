@@ -76,15 +76,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val dynamicLink = Firebase.dynamicLinks.dynamicLink {
-            link = Uri.parse("https://forcom.page.link/")
-            domainUriPrefix = "https://forcom.page.link"
-            // Open links with this app on Android
-            androidParameters { }
-            // Open links with com.example.ios on iOS
-            iosParameters("https://forcom.page.link") { }
+        // remote config
+        remoteConfig.setOnClickListener{
+            val intent = Intent(this, RemoteConfigActivity::class.java)
+            startActivity(intent)
         }
 
-        val dynamicLinkUri = dynamicLink.uri
     }
 }

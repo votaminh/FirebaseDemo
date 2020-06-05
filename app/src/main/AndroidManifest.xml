@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DynamicLinkActivity"></activity>
+        <activity android:name=".RemoteConfigActivity"></activity>
+        <activity android:name=".DynamicLinkActivity" />
         <activity android:name=".CloudMessageActivity" />
         <activity android:name=".StorageActivity" />
         <activity android:name=".RealtimeDbActivity" />
@@ -20,6 +21,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
@@ -30,7 +32,7 @@
 
                 <data
                     android:host="agadgetworld.com"
-                    android:scheme="https"/>
+                    android:scheme="https" />
             </intent-filter>
         </activity>
 
