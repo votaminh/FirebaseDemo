@@ -29,8 +29,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="data.biggroup.vn"
-                    android:scheme="https" />
+                    android:host="agadgetworld.com"
+                    android:scheme="https"/>
             </intent-filter>
         </activity>
 
