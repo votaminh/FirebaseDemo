@@ -1,9 +1,15 @@
 package com.forcom.firebasedemo
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.google.firebase.dynamiclinks.ktx.androidParameters
+import com.google.firebase.dynamiclinks.ktx.dynamicLink
+import com.google.firebase.dynamiclinks.ktx.dynamicLinks
+import com.google.firebase.dynamiclinks.ktx.iosParameters
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -63,5 +69,22 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CloudMessageActivity::class.java)
             startActivity(intent)
         }
+
+        //dynamic link
+        dynamicLick.setOnClickListener {
+            val intent = Intent(this, DynamicLinkActivity::class.java)
+            startActivity(intent)
+        }
+
+        val dynamicLink = Firebase.dynamicLinks.dynamicLink {
+            link = Uri.parse("https://forcom.page.link/")
+            domainUriPrefix = "https://forcom.page.link"
+            // Open links with this app on Android
+            androidParameters { }
+            // Open links with com.example.ios on iOS
+            iosParameters("https://forcom.page.link") { }
+        }
+
+        val dynamicLinkUri = dynamicLink.uri
     }
 }

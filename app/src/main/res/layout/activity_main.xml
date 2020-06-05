@@ -40,4 +40,10 @@
         android:layout_height="wrap_content"
         android:text="Cloud Message"
         />
+    <Button
+        android:id="@+id/dynamicLick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dynamic link"
+        />
 </LinearLayout>

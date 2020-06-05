@@ -50,4 +50,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-analytics-ktx:17.4.2'
     // cloud message
     implementation 'com.google.firebase:firebase-messaging:20.2.0'
+    // dynamic link
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx:19.1.0'
 }
